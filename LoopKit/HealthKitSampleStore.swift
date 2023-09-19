@@ -171,7 +171,9 @@ public class HealthKitSampleStore {
                 handler = newValue
             }
 
-            oldValue?()
+//            if (oldValue != nil) {
+                oldValue?()
+//            }
         }
     }
     private let lockedObserverQueryCompletionHandler: Locked<HKObserverQueryCompletionHandler?> = Locked(nil)
